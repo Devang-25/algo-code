@@ -1,0 +1,9 @@
+*.idea/*
+build.xml
+build/*
+manifest.mf
+nbproject/*
+*.class
+*.iml
+
+out/
