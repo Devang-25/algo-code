@@ -3,9 +3,9 @@ package leetcode.easy;
 import java.util.Stack;
 
 public class BackSpaceStringCompare {
-    public boolean backspaceCompare(String S, String T){
+    private String  condense( String S){
         Stack<Character> st = new Stack<>();
-
+        StringBuffer sb1 = new StringBuffer();
         for(int i=0;i<S.length();i++){
             if(S.charAt(i) != '#'){
                 st.push(S.charAt(i));
@@ -16,28 +16,17 @@ public class BackSpaceStringCompare {
             }
         }
 
-        StringBuffer sb1 = new StringBuffer();
         while (!st.isEmpty()){
             sb1.append(st.pop());
         }
-
-        for(int i=0;i<T.length();i++){
-            if(T.charAt(i) != '#'){
-                st.push(T.charAt(i));
-            }else{
-                if(!st.isEmpty()){
-                    st.pop();
-                }
-            }
+        return sb1.toString();
+    }
+    public boolean backspaceCompare(String S, String T){
+        if(S == null || T == null){
+            return false;
         }
 
-
-        StringBuffer sb2 = new StringBuffer();
-        while (!st.isEmpty()){
-            sb2.append(st.pop());
-        }
-
-        return sb1.toString().contentEquals(sb2.toString());
+        return condense(S).contentEquals(condense(T));
     }
 
     public static void main(String[] args) {
