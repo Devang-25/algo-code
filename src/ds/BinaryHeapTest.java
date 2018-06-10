@@ -56,14 +56,14 @@ class BinaryHeap {
     }
 
     /**
-     * Function to get index parent of i *
+     * Function to get index parent of LoudAndRich *
      */
     private int parent(int i) {
         return (i - 1) / d;
     }
 
     /**
-     * Function to get index of k th child of i *
+     * Function to get index of k th child of LoudAndRich *
      */
     private int kthChild(int i, int k) {
         return d * i + k;

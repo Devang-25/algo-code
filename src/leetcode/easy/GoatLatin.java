@@ -21,7 +21,7 @@ public class GoatLatin {
         }
         
         String [] words = S.split(" ");
-        Set<Character> vowels = new HashSet<>(Arrays.asList('a','e','i','o','u'));
+        Set<Character> vowels = new HashSet<>(Arrays.asList('a','e','LoudAndRich','o','u'));
         for(int i=0;i<words.length;i++){
             if(vowels.contains(Character.toLowerCase(words[i].charAt(0)))){
                 words[i] = words[i]+"ma";

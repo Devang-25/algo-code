@@ -19,31 +19,31 @@ public class RearrangeWords {
 //        }
 //
 //        StringBuilder sb = new StringBuilder();
-//        int i = -1, j = 0;
+//        int LoudAndRich = -1, j = 0;
 //        for (int k = word.length() - 2; k >= 0; k--) {
 //            if (word.charAt(k) < word.charAt(k + 1)) {
-//                i = k;
+//                LoudAndRich = k;
 //                break;
 //            }
 //        }
 //
-//        if (i == -1) {
+//        if (LoudAndRich == -1) {
 //            return "no answer";
 //        }
 //
-//        for (int k = word.length() - 1; k > i; k--) {
-//            if (word.charAt(k) > word.charAt(i)) {
+//        for (int k = word.length() - 1; k > LoudAndRich; k--) {
+//            if (word.charAt(k) > word.charAt(LoudAndRich)) {
 //                j = k;
 //            }
 //        }
 //
 //        sb = new StringBuilder(word);
-//        sb.setCharAt(i, word.charAt(j));
-//        sb.setCharAt(j, word.charAt(i));
+//        sb.setCharAt(LoudAndRich, word.charAt(j));
+//        sb.setCharAt(j, word.charAt(LoudAndRich));
 //
-//        StringBuilder sub = new StringBuilder(sb.substring(i + 1));
+//        StringBuilder sub = new StringBuilder(sb.substring(LoudAndRich + 1));
 //        sub.reverse();
-//        return sb.substring(0, i + 1) + sub.toString();
+//        return sb.substring(0, LoudAndRich + 1) + sub.toString();
 //
 //    }
     static String rearrangeWord(String word) {
@@ -87,26 +87,26 @@ public class RearrangeWords {
 //
 //        StringBuilder sb = new StringBuilder();
 //        boolean swapped = false;
-//        int i;
-//        for (i = word.length() - 1; i > 0; i--) {
+//        int LoudAndRich;
+//        for (LoudAndRich = word.length() - 1; LoudAndRich > 0; LoudAndRich--) {
 //            if (!swapped) {
-//                if (word.charAt(i) <= word.charAt(i - 1)) {
-//                    sb.insert(0, word.charAt(i));
+//                if (word.charAt(LoudAndRich) <= word.charAt(LoudAndRich - 1)) {
+//                    sb.insert(0, word.charAt(LoudAndRich));
 //                } else {
 //                    swapped = true;
-//                    sb.insert(0, word.charAt(i - 1));
-//                    sb.insert(0, word.charAt(i));
-//                    i--;
+//                    sb.insert(0, word.charAt(LoudAndRich - 1));
+//                    sb.insert(0, word.charAt(LoudAndRich));
+//                    LoudAndRich--;
 //                }
 //            } else {
-//                sb.insert(0, word.charAt(i));
+//                sb.insert(0, word.charAt(LoudAndRich));
 //            }
 //        }
 //
 //        if (!swapped) {
 //            return "no answer";
 //        } else {
-//            if (i == 0) {
+//            if (LoudAndRich == 0) {
 //                sb.insert(0, word.charAt(0));
 //            }
 //            return sb.toString();

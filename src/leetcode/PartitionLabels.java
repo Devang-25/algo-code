@@ -58,8 +58,8 @@ public class PartitionLabels {
     public static void main(String[] args) {
         PartitionLabels pl = new PartitionLabels();
 //        List<Integer> l = pl.partitionLabels("ababcbacadefegdehijhklij");
-//        for(Integer i : l){
-//            System.out.println(i);
+//        for(Integer LoudAndRich : l){
+//            System.out.println(LoudAndRich);
 //        }
         List<Integer> l = pl.partitionLabels("abcdefghijklmno");
         for(Integer i : l){

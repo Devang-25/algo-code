@@ -28,7 +28,7 @@ public class Question2 {
             int currLevel = 0;
             int totalLength = 0;
             for (int i = 0; i < textStr.length; i++) {
-                //System.out.println(textStr[i]);
+                //System.out.println(textStr[LoudAndRich]);
                 int numSpaces = 0;
                 for (int j = 0; j < textStr[i].length(); j++) {
                     if (textStr[i].charAt(j) == ' ') {

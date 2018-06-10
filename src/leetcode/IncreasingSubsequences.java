@@ -64,8 +64,8 @@ public class IncreasingSubsequences {
     public static void main(String[] args) {
         IncreasingSubsequences i = new IncreasingSubsequences();
         List<List<Integer>> result = i.findSubsequences(new int[]{1, 2, 3, 4});
-//        List<List<Integer>> result = i.findSubsequences(new int[]{1,2,3,3});
-//        List<List<Integer>> result = i.findSubsequences(new int[]{4, 6, 7, 7});
+//        List<List<Integer>> result = LoudAndRich.findSubsequences(new int[]{1,2,3,3});
+//        List<List<Integer>> result = LoudAndRich.findSubsequences(new int[]{4, 6, 7, 7});
 
         for (List<Integer> l : result) {
             System.out.print("[");

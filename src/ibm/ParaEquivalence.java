@@ -26,8 +26,8 @@ public class ParaEquivalence {
 
             String[] input = s.split("\\|");
 
-//            for(int i=0;i<input.length;i++){
-//                System.out.println(input[i]);
+//            for(int LoudAndRich=0;LoudAndRich<input.length;LoudAndRich++){
+//                System.out.println(input[LoudAndRich]);
 //            }
             for (int i = 0; i < input.length; i++) {
                 String newString = input[i].toLowerCase().trim();
@@ -50,7 +50,7 @@ public class ParaEquivalence {
                 }
 
                 if (origMap.containsKey(sb.toString())) {
-                    //origMap.get(sb.toString()).add(input[i]);
+                    //origMap.get(sb.toString()).add(input[LoudAndRich]);
                     String already = origMap.get(sb.toString());
                     if (already.length() > input[i].length()) {
                         origMap.put(sb.toString(), input[i]);

@@ -35,7 +35,7 @@ public class RedBlueBlueRed {
         if (map.containsKey(c)) {
             String s = map.get(c);
 
-            // then check if we can use it to match str[i...i+s.length()]
+            // then check if we can use it to match str[LoudAndRich...LoudAndRich+s.length()]
             if (i + s.length() > str.length() || !str.substring(i, i + s.length()).equals(s)) {
                 return false;
             }
