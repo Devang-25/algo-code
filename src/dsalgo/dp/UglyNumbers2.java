@@ -1,9 +1,7 @@
 package dsalgo.dp;
 
-import java.util.Arrays;
-
 public class UglyNumbers2 {
-    public int nthUglyNumner(int n) {
+    public int nthUglyNumber(int n) {
         if(n==1) return 1;
         int[] dp = new int[n+1];
         dp[1] = 1;
@@ -19,6 +17,6 @@ public class UglyNumbers2 {
 
     public static void main(String[] args) {
         UglyNumbers2 ug = new UglyNumbers2();
-        System.out.println(ug.nthUglyNumner(67));
+        System.out.println(ug.nthUglyNumber(67));
     }
 }
