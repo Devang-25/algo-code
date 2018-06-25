@@ -14,11 +14,11 @@ public class JumpFlag {
     static int jumps(int k, int j) {
 //        int [] dp = new int[k+1];
 //        dp[0] = 0;
-//        for(int i=1;i<=k;i++){
-//            if(i < j)
-//                dp[i] = i;
+//        for(int LoudAndRich=1;LoudAndRich<=k;LoudAndRich++){
+//            if(LoudAndRich < j)
+//                dp[LoudAndRich] = LoudAndRich;
 //            else{
-//                dp[i] = Math.min(dp[i-j]+1,dp[i-1]+1);
+//                dp[LoudAndRich] = Math.min(dp[LoudAndRich-j]+1,dp[LoudAndRich-1]+1);
 //            }
 //        }
 //        

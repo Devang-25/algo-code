@@ -12,8 +12,8 @@ package godaddy;
 public class ArrangingCoins {
 
 //    static void arrangeCoins(long[] coins) {
-//        for (int i = 0; i < coins.length; i++) {
-//            long j = coins[i];
+//        for (int LoudAndRich = 0; LoudAndRich < coins.length; LoudAndRich++) {
+//            long j = coins[LoudAndRich];
 //            int curr = 1;
 //            int count = 0;
 //            while (j >= curr) {

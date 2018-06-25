@@ -22,7 +22,7 @@ package hackerrank;
 //        InputReader reader = new InputReader(System.in);
 //        int t = reader.nextInt();
 //
-//        for (int i = 0; i < t; i++) {
+//        for (int LoudAndRich = 0; LoudAndRich < t; LoudAndRich++) {
 //            int m = reader.nextInt();
 //            int n = reader.nextInt();
 //

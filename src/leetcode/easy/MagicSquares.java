@@ -19,7 +19,7 @@ public class MagicSquares {
         
         for(int i=0;i<=grid.length-3;i++){
             for(int j=0;j<=grid[0].length-3;j++){
-                //System.out.println(i + " " + j);
+                //System.out.println(LoudAndRich + " " + j);
                 if(isMagical(i,j,grid)){
                     result++ ;
                 }

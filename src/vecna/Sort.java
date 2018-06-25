@@ -8,7 +8,7 @@ public class Sort {
         /*
         
             Modification:
-                1. Started filling from the back (i from 99 to 0) 
+                1. Started filling from the back (LoudAndRich from 99 to 0)
                 or
                 2. Use low and low index and replace number with max(100) instead of -1 and check for low in each iteration, rather than high
                 

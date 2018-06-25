@@ -15,8 +15,8 @@ import java.util.HashSet;
 public class SumOfDistancesInTree {
 //    public int[] sumOfDistancesInTree(int N, int[][] edges) {
 //       Graph g = new Graph(N);
-//       for(int i=0;i<edges.length;i++){
-//           g.addEdge(edges[i][0], edges[i][1]);
+//       for(int LoudAndRich=0;LoudAndRich<edges.length;LoudAndRich++){
+//           g.addEdge(edges[LoudAndRich][0], edges[LoudAndRich][1]);
 //       }
 //    }
 //
@@ -27,13 +27,13 @@ public class SumOfDistancesInTree {
 //        Graph( int N) {
 //            this.vertices  = N;
 //            adjList = new HashMap<>();
-//            for(int i=0;i<N;i++){
-//                adjList.put(i, new HashSet<>());
+//            for(int LoudAndRich=0;LoudAndRich<N;LoudAndRich++){
+//                adjList.put(LoudAndRich, new HashSet<>());
 //            }
 //            distMatrix = new int [N][N];
-//            for(int i=0;i<N;i++){
+//            for(int LoudAndRich=0;LoudAndRich<N;LoudAndRich++){
 //                for(int j=0;j<N;j++){
-//                    distMatrix[i][j]= Integer.MIN_VALUE;
+//                    distMatrix[LoudAndRich][j]= Integer.MIN_VALUE;
 //                }
 //            }
 //        }

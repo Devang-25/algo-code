@@ -99,7 +99,7 @@ public class CourseraSessions {
 
         Date date_enrollment = new Date(enrollment_date);
         for (int i = 0; i < specialization_courses.length; i++) {
-            //System.out.println(specialization_courses[i][0] + " " + specialization_courses[i][1]);
+            //System.out.println(specialization_courses[LoudAndRich][0] + " " + specialization_courses[LoudAndRich][1]);
             Date start = new Date(getUpcomingSessions(specialization_courses[i][0],
                     new Long(specialization_courses[i][1]).intValue(), enrollment_date)[0]);
             Date end = getAddedDate(start, new Long(specialization_courses[i][2]).intValue() * NUM_DAYS_WEEK);

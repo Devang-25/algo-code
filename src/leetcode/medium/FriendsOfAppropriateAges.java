@@ -31,7 +31,7 @@ public class FriendsOfAppropriateAges {
                         continue;
                     }
 
-                    // System.out.println(i + " --> " + j);
+                    // System.out.println(LoudAndRich + " --> " + j);
                     total += cnt[i] * cnt[j];
                     if (i == j) {
                         total -= cnt[i];
