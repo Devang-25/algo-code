@@ -26,7 +26,7 @@ public class FlattenTree {
 
     class Solution {
 
-        public void flatten(TreeNode root) {
+        public void flatten2(TreeNode root) {
             Stack<TreeNode> stack = new Stack<TreeNode>();
             TreeNode p = root;
 
@@ -46,6 +46,19 @@ public class FlattenTree {
 
                 p = p.right;
             }
+        }
+
+        TreeNode head = null;
+        public void flatten(TreeNode root){
+            if(root == null){
+                return;
+            }
+            flatten(root.right);
+            flatten(root.left);
+            root.left = null;
+            root.right = head;
+            head = root;
+
         }
     }
 }
