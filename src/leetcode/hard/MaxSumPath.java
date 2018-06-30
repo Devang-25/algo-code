@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package leetcode;
+package hard;
 
 /**
  *
@@ -35,13 +35,8 @@ public class MaxSumPath {
         int leftMax = maxPathSumUtil(root.left);
         int rightMax = maxPathSumUtil(root.right);
       
-        int val = Integer.max(root.val,Integer.max(leftMax, rightMax) + root.val);
-        int max = Integer.max(val,root.val+leftMax+rightMax);
-        if(max > maxSoFar){
-            maxSoFar = max;
-        }
-        
-        return val;
+        maxSoFar = Math.max(maxSoFar, root.val+leftMax+rightMax);
+        return Math.max(0, root.val+ Math.max(leftMax,rightMax));
     }
 
     public static void main(String[] args) {
