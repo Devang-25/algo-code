@@ -58,8 +58,7 @@ public class ExamRoom {
 
         System.out.println(er.seat());
         System.out.println(er.seat());
-        System.out.println(er.seat());2
-                .
+        System.out.println(er.seat());
         System.out.println(er.seat());
         System.out.println(er.seat());
         System.out.println(er.seat());
