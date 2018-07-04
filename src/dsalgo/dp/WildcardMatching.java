@@ -1,4 +1,4 @@
-package hard;
+package dsalgo.dp;
 
 
 /**
@@ -10,7 +10,7 @@ public class WildcardMatching {
         boolean [][] dp = new boolean [p.length()+1][s.length()+1];
         dp[0][0] = true;
 
-        for(int i=1;i<p.length();i++){
+        for(int i=1;i<p.length()+1;i++){
             if(p.charAt(i-1) == '*'){
                 dp[i][0] = true;
             }else{
@@ -36,7 +36,7 @@ public class WildcardMatching {
     public static void main(String[] args) {
         WildcardMatching wm = new WildcardMatching();
         System.out.println(wm.isMatch("acdcb","a*c?b"));
-        System.out.println(wm.isMatch("aa","a"));
+        System.out.println(wm.isMatch("aa","*"));
     }
 
 }
