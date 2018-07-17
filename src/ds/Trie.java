@@ -5,6 +5,9 @@
  */
 
 package ds;
+
+import java.util.ArrayList;
+
 /**
  * @author mns
  */
@@ -15,6 +18,12 @@ public class Trie {
 
     public Trie() {
         this.root = new TrieNode();
+    }
+    public Trie(String [] words) {
+        this.root = new TrieNode();
+        for(String word : words){
+            this.insert(word);
+        }
     }
 
     public class NoTrieElementException extends Exception {
@@ -36,6 +45,31 @@ public class Trie {
             cur = cur.childrenMap.get(c);
         }
         return true;
+    }
+
+    public ArrayList<String> find(String prefix){
+        ArrayList<String> result = new ArrayList<>();
+        TrieNode cur = root;
+        for (int i = 0; i < prefix.length(); i++) {
+            char c = prefix.charAt(i);
+            if (cur.childrenMap.get(c) == null) {
+                return result;
+            }
+            cur = cur.childrenMap.get(c);
+        }
+
+        findUtil(prefix,"",cur,result);
+        return result;
+    }
+
+    private void findUtil(String prefix, String suffix, TrieNode cur, ArrayList<String> result){
+        if(cur.isWord){
+            result.add(prefix+suffix);
+        }
+
+        for(Character c : cur.childrenMap.keySet()){
+            findUtil(prefix,suffix+c,cur.childrenMap.get(c),result);
+        }
     }
 
     public TrieNode getRoot() {
@@ -80,5 +114,11 @@ public class Trie {
         if (curr.isWord) {
             curr.isWord = false;
         }
+    }
+
+    public static void main(String[] args) {
+        Trie t = new Trie(new String[]{"a","aa","bbb","b","cc","abc","axbcc"});
+        t.find("a").stream().forEach(System.out::println);
+
     }
 }

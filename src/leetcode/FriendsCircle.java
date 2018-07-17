@@ -53,9 +53,9 @@ public class FriendsCircle {
                 root = parent[root];
             }
             while (p != root) {
-                int newp = parent[p];
+                int oldp = parent[p];
                 parent[p] = root;
-                p = newp;
+                p = oldp;
             }
             return root;
         }
