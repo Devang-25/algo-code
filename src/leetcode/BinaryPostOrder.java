@@ -15,23 +15,21 @@ import java.util.*;
 public class BinaryPostOrder {
 
     public List<Integer> postorderTraversal(TreeNode root) {
-        List<Integer> result = new ArrayList<>();
-        TreeNode curr = root;
-        ArrayDeque<TreeNode> st = new ArrayDeque<>();
+        LinkedList<Integer> result = new LinkedList<>();
 
-        while (!st.isEmpty() || curr !=null) {
+        Stack<TreeNode> st = new Stack<>();
+        TreeNode curr = root;
+        while (!st.isEmpty() || curr != null) {
             if (curr != null) {
                 st.push(curr);
-                if (curr.right != null) {
-                    st.push(curr.right);
-                }
-                curr = curr.left;
-
-            } else {
-                curr = st.pop();
-                result.add(curr.val);
+                result.addFirst(curr.val);
+                curr = curr.right;
+            }else{
+                TreeNode t = st.pop();
+                curr = t.left;
             }
         }
+
         return result;
     }
 
