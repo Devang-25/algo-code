@@ -18,13 +18,13 @@ public class SerializeDeserialize {
         TreeNode right;
         TreeNode(int x) { val = x; }
     }
- 
-    
+
+
     public String serialize(TreeNode root) {
         if(root == null){
             return "()";
         }
-        
+
         return "(" + root.val + "," + serialize(root.left) +","+serialize(root.right) + ")";
     }
 
@@ -33,7 +33,7 @@ public class SerializeDeserialize {
         if(data == null || data.length() == 0 || data.contentEquals("()")){
             return null;
         }
-        
+
         TreeNode node = null;
         if(data.charAt(0) == '('){
             int length = data.length();
@@ -45,11 +45,11 @@ public class SerializeDeserialize {
                 }
                 nodeData += data.charAt(i);
             }
-            
+
             if(nodeData.length() == 0){
                 return null;
             }
-            
+
             node = new TreeNode(Integer.parseInt(nodeData));
             i++;
             int openParenthesis = 0;
@@ -59,13 +59,13 @@ public class SerializeDeserialize {
                 }else if(data.charAt(i) == ')'){
                     openParenthesis--;
                 }
-                
+
                 leftData += data.charAt(i);
                 if(openParenthesis == 0){
                     break;
                 }
             }
-            
+
             i+=2;
             for(;i<length-1;i++){
                 if(data.charAt(i) == '('){
@@ -73,21 +73,21 @@ public class SerializeDeserialize {
                 }else if(data.charAt(i) == ')'){
                     openParenthesis--;
                 }
-                
+
                 rightData += data.charAt(i);
                 if(openParenthesis == 0){
                     break;
                 }
             }
-            
+
             node.left = deserialize(leftData);
             node.right = deserialize(rightData);
-            
-            
+
+
         }
-        
+
         return node;
-        
+
     }
    
     public static void main(String[] args) {

@@ -59,4 +59,12 @@ public class BinaryTree {
 
     }
 
+    public static void printPreOrder(TreeNode t){
+        if(t!=null){
+            System.out.print(t.val+",");
+            printPreOrder(t.left);
+            printPreOrder(t.right);
+        }
+    }
+
 }
