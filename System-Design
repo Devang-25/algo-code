@@ -1,0 +1,39 @@
+1. https://www.slideshare.net/jboner/scalability-availability-stability-patterns/48-Buddy_Replication
+
+
+Types of replication:
+    On a higher level :
+    -------------------
+    1. Push replication
+    2. pull replication
+
+
+    On a finer level :
+    --------------------
+    Writes are only made to the master or root node.
+    1. Master - slave
+    2. Master - Master
+    3. Buddy replication -
+        Buddy Replication allows you to suppress replicating your data to all instances
+        in a cluster. Instead, each instance picks one or more 'buddies' in the cluster,
+        and only replicates to these specific buddies.
+    4. Tree Replication
+
+    Replication in Microsofts SQL Server
+    ------------------------------------
+    Snapshot replication :
+        used when data changes infrequently
+    Transaction replication :
+        Used when data changes frequently. Only the diffs from previous snapshots are transferred
+        to the subscribers.
+    Merge replication:
+    Similar to transactional but the synchronization doesn't happen for every change, but happens when
+    some event is triggered like when the client reads the data -> goes offline -> makes changes and then return online
+    and wants to commit those changes to the main database. (similar to code merging).
+
+
+
+
+Locking: Optimistic and Pessimistic locking:
+Optimisitic locking takes a version number of the record and before updating that record, checks if the version has not changed
+Pessimistic locking locks the entire record so other client can access it before the current update is finished.

@@ -1,0 +1,107 @@
+Why going for cloud?
+1 - On demand access -  pay as you use,
+2 - Data intensive-- Previously you had compute intensive..now its data intensive
+    - So wer need to move compute node near data rather than other way around. Now Network I/O and disk I/O are more
+    important than CPU utilization.
+3 - Massive scale
+4 - New programming paradigms like parallel computing, Map reduce , key value stores etc
+
+
+AAS
+
+HAAS - Harware as a service
+IAAS - Infra As a service
+PAAS - Platform  as a service
+SAAS - SOftware as a service
+
+
+What is a distributed System?
+-----------------------------
+
+A collection of heterogenous systems communicating with each other
+and may not necessarily exist at a single location.
+They are autonomous, programmable and work asynchronously (have their own clock) and can fail and
+communicate over network.
+
+Map Reduce:
+------------
+
+Map phase converts a set of data into key value pairs (Easily parallelised by sharding). Each map task is independent.
+Reduce phase takes these key value pairs and aggregates them into one key value pair for every reduce task.
+(All keys with similar hash are sent to the same reducer)
+
+Shuffle phase is intermediate to map and reduce which takes data from some map task to some reduce task based on hash partition
+ ( Can start even before all map tasks are done.)
+
+In storage phase, all of the result from the reducer is stored into as distributed file system.
+Example of map reduce:
+    ----------------------
+    1. Distributed Grep :
+    -------------------
+        Map emits (lines with matching text)
+        Reduce (does nothing much ) Just writes it to the file.
+
+    2. Reverse web link graph
+    3. Count of url access frequency
+        1. Map <url,1>
+        2. Reduce <url, total_count>
+        3. Map <url,total_count> -> <1,total_count>
+        4. Reduce <1, grand_total>
+        5. Reduce <utl. total_count/grand_total>
+    4. Large dataset sorting
+
+
+Resource manager assign map tasks and reduce tasks to actually servers.
+ex YARN (Global resource manager + node manager (each node) + per Application specific master (each node))
+
+
+------------------------------------------
+Multicast message : How information from one node is transmitted to a group of other nodes which don't have that info.
+Needs to be fault tolerant (i.e must work even if some nodes fail) and must be scalable.
+
+Approaches:
+
+    Centralized (A server sends data to all clients) -
+        Not fault tolerant if server fails.
+        Linear time latency.
+
+    Tree-based:
+        Complexity How to organize the tree. (if node near the root fails, then many decendants wont receive)
+        Latency (logn)
+
+
+    Both these two uses :SRM (scalable reliable multicast and Reliable multicast protocol) both of which are not scalable (NAK,ACK storms)
+
+    Gossip: A node periodically transmits new data to N random nodes . A node may receive multiple gossips (logarithmic). These infoected
+    nodes in turn send the data to N other random nodes.
+        Variants : push or pull or hybrid.
+
+        This is scalable (logarithmic duplicated and logarithmic latency)
+        This is fault tolerance Even if 50% node failure, the gossips spread (fast) actualy half as fast but eventually
+        every working node gets the gossip.
+
+        pull is faster than push after half nodes are infected because after that half, the push leads to too many duplicates)
+        Gossip is Topology aware . To fix this prefer more probability for nodes within the same subnet.
+
+
+-------------------------------
+Membership protocol must have
+    membership list which has list of other members part of the group. This list can be complete . weakly consistent.
+    Failure detector, which detects if one of the members fails. (The failure detector module in multiple members can detect the same failure)
+    Disseminator - Communicates about the above failure to other nodes in the member.
+
+    This runs in all the members of the group.
+
+
+    Failure detectors need to be :
+        complete - Meaning that a failure in membership group must eventually be communicated to a working node
+        Accuracy - Meaning that there must be no false positives
+        Failure detection time must be fast
+        It must scale - (less network usage)
+
+
+        Centralized heartbeat system - If the central node fails, all error detection is lost.
+        Ring heartbeat system
+        All to all heartbeat - ensure 100% completeness
+
+        Heartbeat is counter value sent between two loads to detect liveliness.
