@@ -5,26 +5,35 @@
  */
 package leetcode;
 
+import util.Tree.TreeNode;
+
 import java.util.*;
 
 /**
- *
  * @author mns
  */
 public class BinaryPostOrder {
 
-    class TreeNode {
+    public List<Integer> postorderTraversal(TreeNode root) {
+        LinkedList<Integer> result = new LinkedList<>();
 
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
+        Stack<TreeNode> st = new Stack<>();
+        TreeNode curr = root;
+        while (!st.isEmpty() || curr != null) {
+            if (curr != null) {
+                st.push(curr);
+                result.addFirst(curr.val);
+                curr = curr.right;
+            }else{
+                TreeNode t = st.pop();
+                curr = t.left;
+            }
         }
+
+        return result;
     }
 
-    public List<Integer> postorderTraversal(TreeNode root) {
+    public List<Integer> postorderTraversal2(TreeNode root) {
         List<Integer> result = new ArrayList<>();
         if (root != null) {
             Stack<TreeNode> st = new Stack<>();

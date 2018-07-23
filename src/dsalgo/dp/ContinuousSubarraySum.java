@@ -1,9 +1,33 @@
 package dsalgo.dp;
 
+import java.util.HashMap;
+import java.util.HashSet;
+
 /**
  * Created by mns on 5/16/18.
  */
 public class ContinuousSubarraySum {
+
+    public boolean checkSubArraySum(int [] nums, int k){
+        HashMap<Integer,Integer> map = new HashMap<>();
+        int sum = 0;
+        map.put(0,-1); // empty set
+        for(int i=0;i<nums.length;i++){
+            sum += nums[i];
+            if(k != 0){
+                sum = sum%k;
+            }
+            Integer prev = map.get(sum);
+            if(prev != null){
+                if(i-prev > 1){
+                    return true;
+                }
+            }else {
+                map.put(sum, i);
+            }
+        }
+        return false;
+    }
     public boolean checkSubarraySum(int[] nums, int k) {
         if(nums == null || nums.length == 0){
             return false;
