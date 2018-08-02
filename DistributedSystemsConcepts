@@ -9,7 +9,7 @@ Why going for cloud?
 
 AAS
 
-HAAS - Harware as a service
+HAAS - Hardware as a service
 IAAS - Infra As a service
 PAAS - Platform  as a service
 SAAS - SOftware as a service
@@ -92,16 +92,40 @@ Membership protocol must have
 
     This runs in all the members of the group.
 
+    crash-stop and crash recovery:
 
     Failure detectors need to be :
         complete - Meaning that a failure in membership group must eventually be communicated to a working node
         Accuracy - Meaning that there must be no false positives
-        Failure detection time must be fast
+        time to first detection must be less (faster).
         It must scale - (less network usage)
 
 
-        Centralized heartbeat system - If the central node fails, all error detection is lost.
+        Centralized heartbeat system -
+          1. All nodes send heartbeats to one central node. (heartbeat are just sequence numbers);
+          2. If the central node fails, all error detection is lost.
+          3. Central node has too much incoming traffic.
+
         Ring heartbeat system
+          1. Each node sends heartbeat only to neighbors
+          2. some failures might go undetected.
+
         All to all heartbeat - ensure 100% completeness
 
+        Gossip Style heartbeat is a variation of All to All heartbeat. (Sends membership list to random nodes)
+        ---------------------------------------------------------------
+        NeighborsID   SeqNumber  LocalTime (when SeqNumber was updated)
+        ---------------------------------------------------------------
         Heartbeat is counter value sent between two loads to detect liveliness.
+        If the membership entry for a node is not updated for tFail seconds, then it is marked as failed
+        If the membership entry for a node is not updated for tCleanup seconds, then it is removed from membership list.
+
+
+        SWIM Failure detector. Instead of heartbeat, a node pings other nodes . If other node p2 doesn't reply, it tries to ping k other nodes to see they can ping
+        p2 instead. This has much less bandwidth than using gossip style membership which is based on heartbeat.
+
+        sudo rm -rf /etc/chromium
+
+        sudo apt-get remove chromium --purge
+        rm -rf ~/.config/chromium
+        rm -rf ~/.cache/chromium
