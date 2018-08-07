@@ -10,8 +10,14 @@ package leetcode;
  * @author sekha
  */
 public class SortList {
+    static class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) { val = x; }
+    }
+
     public ListNode sortList(ListNode head) {
-        
+
         if(head == null || head.next == null){
             return head;
         }
