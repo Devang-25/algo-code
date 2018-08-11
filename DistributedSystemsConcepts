@@ -124,8 +124,7 @@ Membership protocol must have
         SWIM Failure detector. Instead of heartbeat, a node pings other nodes . If other node p2 doesn't reply, it tries to ping k other nodes to see they can ping
         p2 instead. This has much less bandwidth than using gossip style membership which is based on heartbeat.
 
-        sudo rm -rf /etc/chromium
+===============================
 
-        sudo apt-get remove chromium --purge
-        rm -rf ~/.config/chromium
-        rm -rf ~/.cache/chromium
+Peer to peer Systems.
+---------------------
