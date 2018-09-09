@@ -2,7 +2,7 @@ package leetcode.medium;
 
 public class DivideTwoIntegers {
     public int divide(int dividend , int divisor){
-        int result = 0;
+        long result = 0;
         boolean sign = false;
         if(dividend <0  && divisor <0 || dividend >0 && divisor >0){
             sign = true;
@@ -14,10 +14,11 @@ public class DivideTwoIntegers {
             result++;
         }
 
+        System.out.println(result);
         if(!sign){
-            return -result;
+            return -(int)result;
         }
-        return result;
+        return (int)result;
     }
 
     public static void main(String[] args) {
@@ -26,5 +27,6 @@ public class DivideTwoIntegers {
         System.out.println(dt.divide(7,-3));
         System.out.println(dt.divide(900,-1));
         System.out.println(dt.divide(-1,-1));
+        System.out.println(dt.divide(-2147483648,-1));
     }
 }
