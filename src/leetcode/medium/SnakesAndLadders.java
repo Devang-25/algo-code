@@ -11,15 +11,20 @@ public class SnakesAndLadders {
 
 
     private int getIndex(int N, int i, int j){
-        return (N-i-1)*N + ((N-i-1)%2 == 0 ? j+1: N-j);
+        if(i % 2 == 0){
+            return (N-i) * N - j;
+        }else{
+            return (N-i) * N - (N-j-1);
+        }
     }
 
     public static void main(String[] args) {
         SnakesAndLadders sl = new SnakesAndLadders();
         for(int i=0;i<6;i++){
             for(int j=0;j<6;j++){
-                System.out.println(sl.getIndex(6,i,j));
+                System.out.print(sl.getIndex(6,i,j) + " ");
             }
+            System.out.println();
         }
 
     }
