@@ -1,40 +1,33 @@
 package leetcode.medium;
 
+import java.util.Arrays;
+
 public class KnightDialer {
-    private static final int [][] KEYS = new int [][] {
-            {1,2,3},
-            {4,5,6},
-            {7,8,9},
-            {-1,0,-1}
-    };
-    private static final int [][] DIR = new int [][]{
-            {-1,-2},
-            {-2,-1},
-            {-2,1},
-            {-1,2},
-            {1,2},
-            {2,1},
-            {2,-1},
-            {1,-2}
-    };
     public int knightDialer(int N) {
-        if( N == 1){
-            return 10;
+        int[][] map = new int[][]{{4, 6}, {6, 8}, {7, 9}, {4, 8}, {0, 3, 9}, {}, {0, 1, 7}, {2, 6}, {1, 3}, {2, 4}};
+        int[][] memo = new int[N + 1][10];
+        for (int i = 1; i <= N; i++) {
+            Arrays.fill(memo[i], -1);
         }
-        int [][] mem = new int[10][N+1];
-        for(int i=0;i<10;i++){
-            mem[i][1] = 1;
+        int result = 0;
+        for (int i = 0; i < 10; i++) {
+            result += helper(N, i, map, memo);
+            result %= (int)1e9 + 7;
         }
-        return 0;
+        return result;
     }
-
-    private int util(int N, int [][] mem, int curr, int n){
-        if(mem[curr][N-n] == 0){
-            return 0;
+    private int helper(int N, int start, int[][] map, int[][] memo) {
+        if (N == 1) {
+            return 1;
         }
-
-
-
-        return mem[curr][N-n];
+        if (memo[N][start] > -1) {
+            return memo[N][start];
+        }
+        memo[N][start] = 0;
+        for (int next : map[start]) {
+            memo[N][start] += helper(N - 1, next, map, memo);
+            memo[N][start] %= (int)1e9 + 7;
+        }
+        return memo[N][start];
     }
 }
