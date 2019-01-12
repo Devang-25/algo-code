@@ -10,5 +10,7 @@ package leetcode.hard;
  * @author mns
  */
 public class MaxChunksSorted2 {
-    
+    public int maxChunksToSorted(int[] arr) {
+        return 0;
+    }
 }
