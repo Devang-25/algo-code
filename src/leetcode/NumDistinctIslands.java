@@ -14,95 +14,44 @@ import java.util.Set;
  * @author mns
  */
 public class NumDistinctIslands {
-    
-    class ArrayListWrapper {
-        ArrayList<Integer> arrayList;
 
-        public ArrayListWrapper(ArrayList<Integer> list) {
-            arrayList = list;
-        }
-
-        @Override
-        public int hashCode() {
-            return 0;
-        }
-
-        
-        @Override
-        public boolean equals(Object obj) {
-            if(obj instanceof ArrayListWrapper){
-                return isEqual(arrayList, ((ArrayListWrapper)obj).arrayList);
-            }
-            return false;
-        } 
-        
-        
-    }
-    
     public int numDistinctIslands(int [][] grid){
      
         if(grid== null || grid.length == 0){
             return 0;
         }
- 
-        ArrayList<ArrayList<Integer> > islands = new ArrayList<>();
+
+        HashSet<String> set = new HashSet<>();
         int rows = grid.length;
         int cols = grid[0].length;
         
         for(int i=0;i<rows;i++){
             for(int j=0;j<cols;j++){
               if(grid[i][j] == 1){
-                  ArrayList<Integer> island = new ArrayList<>();
-                  traverse(grid,i,j,island);
-                  islands.add(island);
+                  StringBuilder sb = new StringBuilder();
+                  traverse(grid,i,j,0,0,sb);
+                  set.add(sb.toString());
               }
             }
         }
-        
-        //System.out.println("The number of islands is " + islands.size());
-        
-        if(islands.isEmpty() || islands.size() == 1){
-            return islands.size();
-        }
-        
-        ArrayList<ArrayListWrapper> islandsWrapper = new ArrayList<>();
-        for(int i=0;i<islands.size();i++){
-            islandsWrapper.add(new ArrayListWrapper(islands.get(i)));
-        }
-        
-        Set<ArrayListWrapper> distinctIslands = new HashSet< >(islandsWrapper);
-        return distinctIslands.size();
+
+        return set.size();
     }
+
     
-    private boolean isEqual(ArrayList<Integer> island1 , ArrayList<Integer> island2){
-        if(island1.size() != island2.size()){ 
-            return false;
-        }
-        
-        int alignDiff= island1.get(0) - island2.get(0);
-        for(int i=0;i<island1.size();i++){
-            if(island1.get(i) != island2.get(i)+ alignDiff){
-                return false;
-            }
-        }
-        
-        
-        return true;
-    }
-    
-    public void traverse(int [][] grid, int x, int y, ArrayList<Integer> island){
+    public void traverse(int [][] grid, int x, int y, int x1, int y1, StringBuilder sb){
         if(x <0 || y< 0 || x >= grid.length || y >= grid[0].length || grid[x][y] != 1){
             return;
         }
-        
-        island.add(x*grid[0].length + y);
+
+        sb.append(x1).append(",").append(y1);
         
         // value of -1 means it is visited
         grid[x][y] = -1;
-        traverse(grid,x+1,y,island);
-        traverse(grid,x,y+1,island);
-        traverse(grid,x-1,y,island);
-        traverse(grid,x,y-1,island);
+        traverse(grid,x+1,y,x1+1,y1,sb);
+        traverse(grid,x,y+1,x1,y1+1,sb);
+        traverse(grid,x-1,y,x1-1,y1,sb);
+        traverse(grid,x,y-1,x1,y1-1,sb);
     }
     
     public static void main(String[] args) {
