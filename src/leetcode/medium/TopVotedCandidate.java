@@ -1,5 +1,4 @@
 package leetcode.medium;
-import java.util.HashMap;
 import java.util.TreeMap;
 
 public class TopVotedCandidate {
@@ -34,12 +33,12 @@ public class TopVotedCandidate {
         TopVotedCandidate tvc = new TopVotedCandidate(new int[]{0,1,1,0,0,1,0}, new int[]{0,5,10,15,20,25,30});
         int q [] = new int[] {3,12,25,15,24,8};
         for(int i : q){
-            //System.out.println(tvc.q(i));
+            System.out.println(tvc.q(i));
         }
         tvc = new TopVotedCandidate(new int [] {0,0,0,0,1}, new int[] {0,6,39,52,75} );
         q = new int[] {45,49,59,68,42,37,99,26,78,43};
         for(int i : q) {
-            //System.out.println(tvc.q(i));
+            System.out.println(tvc.q(i));
         }
         tvc = new TopVotedCandidate(new int [] {0,0,1,1,2}, new int[] {0,67,69,74,87} );
         q = new int[] {4,62,100,88,70,73,22,75,29,10};

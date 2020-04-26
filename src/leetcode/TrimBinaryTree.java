@@ -5,8 +5,6 @@
  */
 package leetcode;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import util.Tree.BinaryTree;
 import util.Tree.TreeNode;
 
@@ -15,8 +13,6 @@ import util.Tree.TreeNode;
  * @author mns
  */
 public class TrimBinaryTree {
-
-    private static TreeNode TreeNode;
     /**
  * Definition for a binary tree node. **/
   

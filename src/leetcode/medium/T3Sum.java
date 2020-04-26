@@ -17,7 +17,7 @@ public class T3Sum {
                 int thirdNum = -(nums[i] + nums[j]);
                 Integer index = map.get(thirdNum);
                 if (index != null && index > j) {
-                    List list = Arrays.asList(nums[i] + "", nums[j] + "", thirdNum + "");
+                    List<String> list = Arrays.asList(nums[i] + "", nums[j] + "", thirdNum + "");
                     Collections.sort(list);
                     strResult.add(String.join(",", list));
                 }
@@ -56,7 +56,7 @@ public class T3Sum {
                 int thirdNum = -(nums[i] + nums[j]);
                 Integer index = map.get(thirdNum);
                 if (index != null && index > j) {
-                    List list = Arrays.asList(nums[i] + "", nums[j] + "", thirdNum + "");
+                    List<String> list = Arrays.asList(nums[i] + "", nums[j] + "", thirdNum + "");
                     Collections.sort(list);
                     strResult.add(String.join(",", list));
                 }

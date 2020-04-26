@@ -1,6 +1,5 @@
 package leetcode.medium;
 
-import java.util.HashSet;
 import java.util.LinkedList;
 
 public class PossibleBipartition {

@@ -1,7 +1,5 @@
 package leetcode.medium;
 
-import leetcode.easy.StrobogrammaticNumber;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;

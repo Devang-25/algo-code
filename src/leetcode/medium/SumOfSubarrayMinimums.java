@@ -1,7 +1,5 @@
 package leetcode.medium;
 
-import java.util.Stack;
-
 public class SumOfSubarrayMinimums {
     private static final int MOD = 1000000007;
     public int sumSubarrayMins(int[] a) {

@@ -41,6 +41,6 @@ public class SmallestSubtreeWithDeepNodes {
         SmallestSubtreeWithDeepNodes sm = new SmallestSubtreeWithDeepNodes();
         TreeNode tn = BinaryTree.createTree("3,5,1,6,2,0,8,10,,7,4,22");
         TreeNode result = sm.subtreeWithAllDeepest(tn);
-        System.out.println();
+        System.out.println(result);
     }
 }
