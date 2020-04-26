@@ -38,5 +38,6 @@ public class JesseEncryption {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
         System.out.println(encrypt(input));
+        sc.close();
     }
 }

@@ -1,6 +1,6 @@
 package vecna;
 
-import com.sun.istack.internal.logging.Logger;
+import java.util.logging.Logger;
 
 public class DogSearch {
 
@@ -50,7 +50,7 @@ public class DogSearch {
                 start_index = index + 1;
                 count++;
                 if (DEBUG) {
-                    Logger.getLogger(DogSearch.class).info("index : " + index);
+                    Logger.getLogger(DogSearch.class.toString()).info("index : " + index);
                 }
                 System.out.print(count + " ");
             }

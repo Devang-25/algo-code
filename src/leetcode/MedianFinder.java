@@ -1,4 +1,6 @@
-import java.util.*;
+package leetcode;
+
+import java.util.TreeMap;
 
 public class MedianFinder {
 

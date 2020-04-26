@@ -1,8 +1,7 @@
-package medium;
+package leetcode.medium;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 
 /**
  * Created by mns on 10/10/18.

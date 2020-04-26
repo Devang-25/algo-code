@@ -1,4 +1,4 @@
-package hard;
+package leetcode.hard;
 
 import java.util.HashSet;
 import java.util.LinkedList;

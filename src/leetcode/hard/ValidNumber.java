@@ -1,4 +1,4 @@
-package hard;
+package leetcode.hard;
 
 /**
  * Created by mns on 6/22/18.

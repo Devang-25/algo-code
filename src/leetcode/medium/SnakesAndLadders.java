@@ -1,4 +1,4 @@
-package medium;
+package leetcode.medium;
 
 /**
  * Created by mns on 9/22/18.

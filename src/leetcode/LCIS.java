@@ -1,3 +1,5 @@
+package leetcode;
+
 public class LCIS {
 
     public int findLengthOfLCIS(int[] nums) {

@@ -1,8 +1,6 @@
-package medium;
+package leetcode.medium;
 
 import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
 
 /**
  * Created by mns on 10/14/18.

@@ -1,6 +1,4 @@
-package hard;
-
-import java.util.LinkedHashMap;
+package leetcode.hard;
 
 /**
  * Created by mns on 8/8/18.

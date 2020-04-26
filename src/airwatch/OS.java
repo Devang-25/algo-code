@@ -73,6 +73,7 @@ public class OS {
         }
 
         System.out.println(rec_solve(lp, 0,m));
+        sc.close();
         
     }
 

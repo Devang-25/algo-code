@@ -5,11 +5,7 @@
  */
 package leetcode;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
-
-import com.sun.org.apache.xpath.internal.SourceTree;
 
 /**
  *

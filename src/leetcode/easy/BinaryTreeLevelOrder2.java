@@ -1,6 +1,10 @@
-package easy;
+package leetcode.easy;
 
-import java.util.*;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 /**
  * Created by mns on 7/12/18.

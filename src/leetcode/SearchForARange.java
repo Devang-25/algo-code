@@ -1,3 +1,5 @@
+package leetcode;
+
 public class SearchForARange {
     public int[] searchRange(int[] nums, int target) {
         return new int[]{findFirst(nums,target),findLast(nums,target)};

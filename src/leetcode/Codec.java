@@ -1,3 +1,4 @@
+package leetcode;
 import java.util.HashMap;
 
 public class Codec {
@@ -5,7 +6,7 @@ public class Codec {
     private static long entryNum;
     private HashMap<Long,String> map = null;
     public Codec(){
-        this.entryNum = 0;
+        entryNum = 0;
         this.map = new HashMap<>();
     }
 

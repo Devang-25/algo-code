@@ -1,3 +1,5 @@
+package leetcode;
+
 public class FirstBadVersion {
 
     private boolean isBadVersion(int num){

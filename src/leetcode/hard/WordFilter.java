@@ -1,8 +1,10 @@
-package hard;
+package leetcode.hard;
 
-import ds.TrieNode;
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * Created by mns on 7/9/18.

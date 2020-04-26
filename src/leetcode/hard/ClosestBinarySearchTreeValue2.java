@@ -1,11 +1,9 @@
-package hard;
+package leetcode.hard;
 
-import util.Tree.TreeNode;
-
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.PriorityQueue;
+
+import util.Tree.TreeNode;
 
 /**
  * Created by mns on 8/11/18.

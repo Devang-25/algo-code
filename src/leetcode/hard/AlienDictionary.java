@@ -1,8 +1,7 @@
-package hard;
+package leetcode.hard;
 
-import ds.graphs.DiGraph;
-
-import java.util.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by mns on 9/18/18.

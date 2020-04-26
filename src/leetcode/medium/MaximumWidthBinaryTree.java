@@ -1,9 +1,9 @@
-package medium;
+package leetcode.medium;
+
+import java.util.LinkedList;
 
 import util.Tree.BinaryTree;
 import util.Tree.TreeNode;
-
-import java.util.LinkedList;
 
 /**
  * Created by mns on 7/12/18.

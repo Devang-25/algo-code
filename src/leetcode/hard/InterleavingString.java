@@ -1,7 +1,6 @@
-package hard;
+package leetcode.hard;
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 /**
  * Created by mns on 10/13/18.

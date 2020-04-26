@@ -1,6 +1,4 @@
-package medium;
-
-import java.util.List;
+package leetcode.medium;
 
 /**
  * Created by mns on 1/4/19.

@@ -6,7 +6,6 @@
 package airwatch;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Scanner;
@@ -46,8 +45,7 @@ public class OSCorrect {
 
         //System.out.println(" " + m+ " "+ n);
         ArrayList<Process> lp = new ArrayList<>();
-
-        int total_dur = 0;
+        
         for (int i = 0; i < n; i++) {
             line = sc.nextLine();
             lineSplit = line.split(" ");
@@ -98,6 +96,7 @@ public class OSCorrect {
             }
         }
         System.out.println(totalTime);
+        sc.close();
 
     }
 

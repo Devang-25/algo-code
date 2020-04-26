@@ -1,4 +1,4 @@
-package dp;
+package dsalgo.dp;
 
 /**
  * Created by mns on 6/26/18.

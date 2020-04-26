@@ -98,7 +98,7 @@ public class CuttingPoint {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
-
+        sc.close();
         System.out.println(findIndex(arr));
         System.out.println(findIndexOpt(arr));
         
