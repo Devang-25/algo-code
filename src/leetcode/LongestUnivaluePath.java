@@ -49,6 +49,6 @@ public class LongestUnivaluePath {
         LongestUnivaluePath lu = new LongestUnivaluePath();
         TreeNode node = new TreeNode(1);
 
-        System.out.println(lu.longestUnivaluePath(null));
+        System.out.println(lu.longestUnivaluePath(node));
     }
 }

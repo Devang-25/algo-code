@@ -125,7 +125,6 @@ public class BinarySearch {
     /** **/
 
     public static void main(String[] args) {
-        BinarySearch bs = new BinarySearch();
         System.out.println(BinarySearch.findFirst(new int[] {0,0,0,1,1,2},2));
         System.out.println(BinarySearch.findLast(new int[] {0,0,0,1,1,2},2));
         System.out.println(BinarySearch.findLast(new int[] {0,0,0,1,1,2},1));

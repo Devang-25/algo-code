@@ -29,7 +29,7 @@ public class ValidParenthesis {
             map.put('[', ']');
 
             Stack<Character> stack = new Stack<Character>();
-            boolean valid = true;
+
             int index = 0;
             while (index < s.length()) {
 

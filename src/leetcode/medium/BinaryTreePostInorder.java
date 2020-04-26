@@ -29,6 +29,6 @@ public class BinaryTreePostInorder {
     public static void main(String[] args) {
         BinaryTreePostInorder bp = new BinaryTreePostInorder();
         TreeNode t = bp.buildTree(new int[]{9,3,15,20,7}, new int[]{9,15,7,20,3});
-        System.out.println();
+        System.out.println(t.val);
     }
 }

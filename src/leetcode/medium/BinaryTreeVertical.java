@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 import java.util.TreeMap;
 
 /**
@@ -17,8 +16,6 @@ import java.util.TreeMap;
  * @author sekha
  */
 public class BinaryTreeVertical {
-
-    private TreeMap<Object, Object> map;
 
     public class TreeNode {
 

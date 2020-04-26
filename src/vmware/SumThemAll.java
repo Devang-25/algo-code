@@ -45,5 +45,6 @@ public class SumThemAll {
         bw.newLine();
 
         bw.close();
+        in.close();
     }
 }

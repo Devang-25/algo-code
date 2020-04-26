@@ -10,9 +10,7 @@ public class FindKClosestElements {
             return null;
         }
 
-        List<Integer> res = new ArrayList<>();
         int left = 0, right = arr.length-1;
-        int ind = 0;
         while(left < right){
             int mid = (left+right)/2;
             if(arr[mid] == x){

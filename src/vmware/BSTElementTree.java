@@ -57,6 +57,7 @@ public class BSTElementTree {
             System.out.println(isPresent(_root, _x));
         }
 
+        in.close();
         return;
     }
 

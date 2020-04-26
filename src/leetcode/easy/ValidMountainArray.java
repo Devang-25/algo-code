@@ -5,7 +5,7 @@ public class ValidMountainArray {
         if(a == null || a.length < 3){
             return false;
         }
-        int peak = 0, i = 0;
+        int i = 0;
         while(i<a.length-1){
             if(a[i] < a[i+1]){
                 i++;

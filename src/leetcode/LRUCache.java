@@ -30,10 +30,6 @@ class DoublyLinkedListNode {
         this.next = next;
     }
 
-    public void setPrev(DoublyLinkedListNode next) {
-        this.prev = prev;
-    }
-
     @Override
     public boolean equals(Object obj) {
         DoublyLinkedListNode dln = (DoublyLinkedListNode) obj;

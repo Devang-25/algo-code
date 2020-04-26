@@ -41,5 +41,6 @@ public class MaxSumPath {
 
     public static void main(String[] args) {
         MaxSumPath msp = new MaxSumPath();
+        msp.maxPathSum(null);
     }
 }

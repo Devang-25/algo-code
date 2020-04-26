@@ -20,7 +20,6 @@ import java.util.Map;
 public class AccountsMerge {
     public List<List<String>> accountsMerge(List<List<String>> accounts) {
         HashMap<String, Integer> map = new HashMap<>();
-        HashMap<String,Integer> countMap = new HashMap<>();
         int accountIndex = 0;
         for(List<String> account : accounts){
             int emailIndex = 0;

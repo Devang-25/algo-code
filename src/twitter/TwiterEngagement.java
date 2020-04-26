@@ -14,10 +14,10 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Comparator;
 import java.util.Date;
-import java.util.TreeMap;
+import java.util.Scanner;
 import java.util.StringTokenizer;
 import java.util.TimeZone;
-import java.util.Scanner;
+import java.util.TreeMap;
 
 /**
  *
@@ -77,6 +77,8 @@ public class TwiterEngagement {
             System.out.print(" ");
             System.out.println("");
         }
+
+        ir.close();
     }
 
 //    public static void main(String[] args) throws ParseException {

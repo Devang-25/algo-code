@@ -7,7 +7,6 @@ import java.util.Stack;
  */
 public class ReversePolish {
     public int evalRPN(String[] tokens) {
-        int index = 0;
         Stack<Integer> st = new Stack<>();
         for(int i=0;i<tokens.length;i++){
             parse(tokens[i],st);

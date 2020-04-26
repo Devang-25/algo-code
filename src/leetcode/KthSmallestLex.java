@@ -13,7 +13,7 @@ import java.util.Random;
  */
 public class KthSmallestLex {
 
-    class LexNumbers implements Comparable {
+    class LexNumbers implements Comparable<LexNumbers> {
 
         int val;
 
@@ -22,8 +22,8 @@ public class KthSmallestLex {
         }
 
         @Override
-        public int compareTo(Object o) {
-            return Integer.toString(this.val).compareTo(Integer.toString(((LexNumbers)o).val));
+        public int compareTo(LexNumbers o) {
+            return Integer.toString(this.val).compareTo(Integer.toString(o.val));
         }
 
     }

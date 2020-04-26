@@ -97,7 +97,6 @@ public class CourseraSessions {
         final int NUM_DETAILS = 2;
         long[][] result = new long[specialization_courses.length][NUM_DETAILS];
 
-        Date date_enrollment = new Date(enrollment_date);
         for (int i = 0; i < specialization_courses.length; i++) {
             //System.out.println(specialization_courses[LoudAndRich][0] + " " + specialization_courses[LoudAndRich][1]);
             Date start = new Date(getUpcomingSessions(specialization_courses[i][0],
@@ -121,5 +120,6 @@ public class CourseraSessions {
         long enrollment_date = Long.parseLong(input);
 
         getUpcomingSessions(launch_date, repeat_grequency, enrollment_date);
+        in.close();
     }
 }

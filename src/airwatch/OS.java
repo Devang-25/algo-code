@@ -61,7 +61,6 @@ public class OS {
         //System.out.println(" " + m+ " "+ n);
         ArrayList<Process> lp = new ArrayList<>();
 
-        int total_dur = 0;
         for (int i = 0; i < n; i++) {
             line = sc.nextLine();
             lineSplit = line.split(" ");

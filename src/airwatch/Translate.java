@@ -52,6 +52,7 @@ public class Translate {
             }
         }
         
+        sc.close();
         
         Collections.sort(vals, new Comparator<Val>() {
             @Override

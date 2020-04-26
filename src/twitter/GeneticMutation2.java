@@ -110,5 +110,6 @@ public class GeneticMutation2 {
         bw.newLine();
 
         bw.close();
+        in.close();
     }
 }

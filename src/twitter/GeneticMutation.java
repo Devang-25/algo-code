@@ -95,5 +95,6 @@ public class GeneticMutation {
         bw.newLine();
 
         bw.close();
+        in.close();
     }
 }

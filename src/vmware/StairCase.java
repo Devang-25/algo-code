@@ -32,6 +32,7 @@ public class StairCase {
         _n = Integer.parseInt(in.nextLine().trim());
 
         StairCase(_n);
+        in.close();
 
     }
 }

@@ -1,7 +1,5 @@
 package leetcode.medium;
 
-import java.util.Arrays;
-
 class MyCircularQueue {
 
     private int[] arr = null;
@@ -62,9 +60,6 @@ class MyCircularQueue {
         return isEmpty()? -1 : arr[rear];
     }
 
-    private void print(){
-        System.out.println(Arrays.toString(arr));
-    }
     /**
      * Checks whether the circular queue is empty or not.
      */

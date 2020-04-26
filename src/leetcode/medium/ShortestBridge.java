@@ -1,7 +1,6 @@
 package leetcode.medium;
 
 import java.util.LinkedList;
-import java.util.Queue;
 
 public class ShortestBridge {
     private static final int [][] DIR = new int [][]{
@@ -14,7 +13,6 @@ public class ShortestBridge {
        boolean p = false;
         int [] cnt = new int[3];
         int [][] visited = new int[a.length][a[0].length];
-        boolean [][] visited2 = new boolean[a.length][a[0].length];
         for(int i=0;i<a.length;i++){
             for(int j=0;j<a[0].length;j++){
                 if(a[i][j] == 1 && visited[i][j] == 0){

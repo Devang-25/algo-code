@@ -17,7 +17,7 @@ public class ReverseNodesinKGroup {
     public ListNode reverseKGroup(ListNode head, int k) {
         ListNode l = new ListNode(0);
         l.next = head;
-        ListNode curr = l, run = head, next = null;
+        ListNode curr = l, run = head;
         int cnt = 0;
 
         while(run != null){

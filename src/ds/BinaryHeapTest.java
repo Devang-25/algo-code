@@ -5,13 +5,13 @@
  */
 package ds;
 
+import java.util.Arrays;
+import java.util.NoSuchElementException;
 /**
  *
  * @author mns
  */
 import java.util.Scanner;
-import java.util.Arrays;
-import java.util.NoSuchElementException;
 
 /**
  * Class BinaryHeap *
@@ -239,5 +239,7 @@ public class BinaryHeapTest {
             System.out.println("\nDo you want to continue (Type y or n) \n");
             ch = scan.next().charAt(0);
         } while (ch == 'Y' || ch == 'y');
+
+        scan.close();
     }
 }

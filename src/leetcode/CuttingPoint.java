@@ -56,8 +56,6 @@ public class CuttingPoint {
             return -1;
         }
 
-        int index = -1;
-
         int[] maxSoFar = new int[arr.length];
         Arrays.fill(maxSoFar, Integer.MIN_VALUE);
         maxSoFar[0] = arr[0];

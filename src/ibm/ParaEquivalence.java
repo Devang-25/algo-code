@@ -30,7 +30,6 @@ public class ParaEquivalence {
 //                System.out.println(input[LoudAndRich]);
 //            }
             for (int i = 0; i < input.length; i++) {
-                String newString = input[i].toLowerCase().trim();
                 StringBuilder sb = new StringBuilder();
                 boolean addSpace = false;
                 for (int j = 0; j < input[i].length(); j++) {

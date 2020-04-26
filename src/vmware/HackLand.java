@@ -72,6 +72,7 @@ public class HackLand {
         bw.newLine();
 
         bw.close();
+        in.close();
     }
 
 }

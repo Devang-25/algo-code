@@ -45,7 +45,6 @@ public class MergeIntervals {
             }
         });
         
-        int currentIndex = 0;
         for(Interval i : intervalsCopy){
             Interval lastInterval = result.peekLast();
             if(lastInterval == null){

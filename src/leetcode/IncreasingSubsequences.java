@@ -7,7 +7,6 @@ package leetcode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -19,7 +18,7 @@ import java.util.Set;
 public class IncreasingSubsequences {
 
     class CArrayList extends ArrayList<Integer> {
-
+        private static final long serialVersionUID = 0;
         @Override
         public boolean equals(Object o) {
             CArrayList c = (CArrayList) o;
@@ -30,7 +29,7 @@ public class IncreasingSubsequences {
 
     public List<List<Integer>> findSubsequences(int[] nums) {
         ArrayList< Set< CArrayList>> dp = new ArrayList<>();
-        HashSet<List<Integer>> result = new HashSet();
+        HashSet<List<Integer>> result = new HashSet<>();
         for (int i = 0; i < nums.length; i++) {
             HashSet<CArrayList> set = new HashSet<>();
             CArrayList subset = new CArrayList();

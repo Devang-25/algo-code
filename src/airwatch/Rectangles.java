@@ -33,31 +33,31 @@ public class Rectangles {
                 System.out.println("0");
             } else {
                 ArrayList<Integer> list = new ArrayList<>();
-                HashMap<Integer,Integer> map = new HashMap<>();
+                HashMap<Integer, Integer> map = new HashMap<>();
                 for (int k = 0; k < lens.length; k++) {
                     list.add(Integer.parseInt(lens[k]));
                 }
-               
+
                 for (int k = 0; k < lens.length; k++) {
                     Integer curr = list.get(k);
                     Integer val = map.get(curr);
-                    if(val== null){
+                    if (val == null) {
                         map.put(curr, 1);
-                    }else{
-                        map.put(curr,val+1);
+                    } else {
+                        map.put(curr, val + 1);
                     }
                 }
-                
+
                 int pairs = 0;
-                for(Integer in : map.values()){
-                    pairs+=in/2;
+                for (Integer in : map.values()) {
+                    pairs += in / 2;
                 }
 
-                System.out.println(pairs/2);
-                
-                
+                System.out.println(pairs / 2);
+
             }
 
         }
+        sc.close();
     }
 }

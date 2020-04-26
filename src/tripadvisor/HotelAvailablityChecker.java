@@ -550,8 +550,6 @@ class HotelTest {
             String date = "2016-02-28";
             String date2 = "2016-02-28";
 
-            ArrayList<Booking> list2 = new ArrayList<>();
-
             HotelAvailablityChecker hac = new HotelAvailablityChecker();
             HashMap<String, Hotel> hotels = new HashMap<>();
             ArrayList<Booking> bookings = new ArrayList<>();
@@ -580,8 +578,6 @@ class HotelTest {
         try {
             String date = "2016-02-28";
             String date2 = "2016-02-28";
-
-            ArrayList<Booking> list2 = new ArrayList<>();
 
             HotelAvailablityChecker hac = new HotelAvailablityChecker();
             HashMap<String, Hotel> hotels = new HashMap<>();

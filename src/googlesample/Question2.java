@@ -6,8 +6,6 @@
 package googlesample;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.Stack;
 
 /**
@@ -73,6 +71,6 @@ public class Question2 {
     public static void main(String[] args) {
         
         Solution s = new Solution();
-        
+        s.solution("sdfsd/sdfdsf");
     }
 }

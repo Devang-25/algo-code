@@ -7,7 +7,6 @@ import java.util.ArrayList;
  */
 public class MultiplyStrings {
     public String multiply(String num1, String num2){
-        int m = num1.length();
         int n = num2.length();
 
         ArrayList<String> intResults = new ArrayList<>();

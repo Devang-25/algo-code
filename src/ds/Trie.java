@@ -27,7 +27,7 @@ public class Trie {
     }
 
     public class NoTrieElementException extends Exception {
-
+        static final long serialVersionUID = 0;
         @Override
         public String getMessage() {
             return "The given element is not found";

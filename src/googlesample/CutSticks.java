@@ -7,7 +7,6 @@ package googlesample;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 
 /**
  *
@@ -22,7 +21,6 @@ public class CutSticks {
             Arrays.sort(lengths);
             System.out.println(Arrays.toString(lengths));
             int startIndex = 0;
-            int largest = lengths[lengths.length - 1];
             while (lengths[startIndex] == 0) {
                 startIndex++;
             }

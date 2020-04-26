@@ -1,9 +1,8 @@
 package leetcode.medium;
 
-import util.Tree.TreeNode;
-
 import java.util.LinkedList;
-import java.util.Queue;
+
+import util.Tree.TreeNode;
 
 public class BinaryTreePreorderPostOrder {
     public TreeNode constructFromPrePost(int[] pre, int[] post) {
@@ -15,8 +14,7 @@ public class BinaryTreePreorderPostOrder {
         TreeNode root = new TreeNode(pre[l]);
         q.add(root);
         l++; r--;
-
-        int levelSize = 2;
+        
         while(!q.isEmpty()){
             int size = q.size();
             for(int i=0;i<size && l <= r;i++){

@@ -7,7 +7,6 @@ package leetcode;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -24,9 +23,7 @@ public class IpToCidr {
             ipNums[i] = Integer.parseInt(splits[i]);
         }
         
-        int ipsAssigned = 0;
-        HashSet<String> cidrs = new HashSet<>();
-        
+        int ipsAssigned = 0;        
         while(ipsAssigned < range){
             int nextPower = (int)Math.pow(2, Math.floor(Math.log(ipNums[3])/Math.log(2)+1));
             ipsAssigned += nextPower - ipNums[3];

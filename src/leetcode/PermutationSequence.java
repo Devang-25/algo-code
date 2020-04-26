@@ -13,7 +13,6 @@ public class PermutationSequence {
 
     private static long [] factorials= null;
     public String getPermutation(int n, int k) {
-        int passed = 0;
         if(factorials == null){
             generateFactorials();
         }
