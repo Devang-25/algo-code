@@ -127,8 +127,10 @@ package hackerrank;
 //
 //}
 
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
 
 public class CuttingBoards{
     private final static int MOD = 1000000007;

@@ -1,5 +1,4 @@
 package leetcode.easy;
-import java.util.*;
 
 public class Reader4 {
     private int ptr = 0;

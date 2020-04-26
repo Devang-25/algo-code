@@ -5,8 +5,6 @@
  */
 package leetcode.easy;
 
-import java.util.Arrays;
-
 /**
  *
  * @author sekha

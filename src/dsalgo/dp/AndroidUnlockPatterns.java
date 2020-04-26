@@ -1,7 +1,5 @@
 package dsalgo.dp;
 
-import java.util.HashSet;
-
 public class AndroidUnlockPatterns {
     private int[][] jumps;
     private boolean[] visited;

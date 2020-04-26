@@ -5,7 +5,7 @@
  */
 package leetcode;
 
-import java.util.*;
+import java.util.HashMap;
 
 /**
  *

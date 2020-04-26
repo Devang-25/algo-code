@@ -1,10 +1,11 @@
 package leetcode.medium;
 
-import util.Tree.*;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
+
+import util.Tree.BinaryTree;
+import util.Tree.TreeNode;
 
 public class BinaryTreePreorderTraversal {
     public List<Integer> preorderTraversal(TreeNode root) {

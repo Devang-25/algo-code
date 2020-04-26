@@ -1,7 +1,5 @@
 package leetcode.easy;
 
-import leetcode.medium.ValidWordAbbr;
-
 public class ValidWordAbbreviation {
     public boolean validWordAbbreviation(String word, String abbr) {
         int index = 0;

@@ -1,11 +1,11 @@
 package leetcode.medium;
 
-import util.Tree.TreeNode;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+
+import util.Tree.TreeNode;
 
 public class FindDuplicateSubtrees {
 

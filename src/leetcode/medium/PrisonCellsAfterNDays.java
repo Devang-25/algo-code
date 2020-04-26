@@ -2,7 +2,6 @@ package leetcode.medium;
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 
 public class PrisonCellsAfterNDays {
     public int[] prisonAfterNDays(int[] cells, int N) {

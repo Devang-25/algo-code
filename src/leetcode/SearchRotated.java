@@ -1,8 +1,6 @@
 package leetcode;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
-import java.util.Collections;
 
 /**
  * Created by sekharan on 3/10/17.

@@ -64,5 +64,6 @@ public class FloodFill {
         };
         
         int [][] arr = f.floodFill(arr1, 1, 1, 2);
+        System.out.println(arr);
     }
 }

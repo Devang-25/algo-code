@@ -1,9 +1,5 @@
 package leetcode.medium;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Created by mns on 5/9/18.
  */

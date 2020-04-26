@@ -1,8 +1,8 @@
 package leetcode.easy;
 
-import util.Tree.TreeNode;
-
 import java.util.HashSet;
+
+import util.Tree.TreeNode;
 
 public class TwoSum4 {
     public boolean findTarget(TreeNode root, int k) {

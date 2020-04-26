@@ -1,6 +1,7 @@
 package leetcode.medium;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
 
 public class ArrayOfDoubledPairs {
     public boolean canReorderDoubled(int[] a) {

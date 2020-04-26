@@ -1,7 +1,5 @@
 package leetcode.medium;
 
-import java.util.List;
-
 public class OddEvenLinkedList {
 
       public class ListNode {

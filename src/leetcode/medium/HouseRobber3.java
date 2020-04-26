@@ -1,8 +1,8 @@
 package leetcode.medium;
 
-import util.Tree.TreeNode;
-
 import java.util.HashMap;
+
+import util.Tree.TreeNode;
 
 public class HouseRobber3 {
     public int rob(TreeNode root) {

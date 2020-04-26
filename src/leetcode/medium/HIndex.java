@@ -1,5 +1,5 @@
 package leetcode.medium;
-import java.util.Arrays;
+
 public class HIndex {
 //    public int hIndex(int[] citations) {
 //        Arrays.sort(citations);

@@ -1,7 +1,5 @@
 package dsalgo.dp;
 
-import util.helper.Print;
-
 public class PartitionEqualSubsetSum {
     public boolean canPartition(int[] nums) {
         if(nums == null || nums.length ==0){

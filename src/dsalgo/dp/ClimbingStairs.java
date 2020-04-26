@@ -1,7 +1,5 @@
 package dsalgo.dp;
 
-import java.util.ArrayDeque;
-
 public class ClimbingStairs {
     public int climbStairs(int n){
         if(n <=0 ){

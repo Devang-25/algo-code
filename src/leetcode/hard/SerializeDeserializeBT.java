@@ -1,10 +1,10 @@
 package leetcode.hard;
 
-import util.Tree.TreeNode;
-import util.Tree.*;
-
 import java.util.LinkedList;
 import java.util.Queue;
+
+import util.Tree.BinaryTree;
+import util.Tree.TreeNode;
 
 public class SerializeDeserializeBT {
 

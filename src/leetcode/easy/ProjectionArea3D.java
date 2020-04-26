@@ -1,7 +1,6 @@
 package leetcode.easy;
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 public class ProjectionArea3D {
     public int projectionArea(int[][] grid) {

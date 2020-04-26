@@ -1,6 +1,9 @@
 package leetcode.medium;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.NoSuchElementException;
 
 public class PeekingIterator implements Iterator<Integer> {
     private Integer next = null;

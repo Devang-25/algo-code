@@ -1,8 +1,6 @@
 package leetcode.medium;
 
-import java.util.Arrays;
 import java.util.PriorityQueue;
-import java.util.stream.Collectors;
 
 public class HandOfStraights {
     public boolean isNStraightHand(int[] hand, int W) {

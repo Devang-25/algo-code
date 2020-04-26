@@ -1,6 +1,10 @@
 package leetcode.medium;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 public class MinimumAreaRectangle {
     public int minAreaRect(int[][] points) {

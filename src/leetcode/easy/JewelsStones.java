@@ -5,7 +5,6 @@
  */
 package leetcode.easy;
 
-import java.util.Arrays;
 import java.util.HashSet;
 
 /**

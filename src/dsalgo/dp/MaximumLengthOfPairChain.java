@@ -1,7 +1,6 @@
 package dsalgo.dp;
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class MaximumLengthOfPairChain {
     public int findLongestChain(int [][] pairs){

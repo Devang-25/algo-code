@@ -1,9 +1,9 @@
 package leetcode.medium;
 
-import util.Tree.TreeNode;
-
 import java.util.LinkedList;
 import java.util.Queue;
+
+import util.Tree.TreeNode;
 
 public class BinaryTreeCompleteness {
     public boolean isCompleteTree(TreeNode root) {

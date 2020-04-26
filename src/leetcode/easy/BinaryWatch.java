@@ -1,7 +1,6 @@
 package leetcode.easy;
 
 import java.util.ArrayList;
-import java.util.BitSet;
 import java.util.List;
 
 /**

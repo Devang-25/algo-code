@@ -5,8 +5,6 @@
  */
 package leetcode;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author mns

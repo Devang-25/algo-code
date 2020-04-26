@@ -5,8 +5,6 @@
  */
 package leetcode.easy;
 
-import javax.swing.SwingUtilities;
-
 /**
  *
  * @author sekha

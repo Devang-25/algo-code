@@ -2,7 +2,6 @@ package leetcode.medium;
 
 
 import java.util.Arrays;
-import java.util.Comparator;
 
 public class ValidTriangleNumber {
     public int triangleNumber(int[] nums) {

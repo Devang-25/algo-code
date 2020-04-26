@@ -1,6 +1,6 @@
 package leetcode.medium;
 
-import util.Tree.*;
+import util.Tree.TreeNode;
 
 public class BinaryTreePreInorder {
     public TreeNode buildTree(int[] preorder, int[] inorder) {

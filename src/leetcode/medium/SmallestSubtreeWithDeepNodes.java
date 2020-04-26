@@ -1,6 +1,7 @@
 package leetcode.medium;
 
-import util.Tree.*;
+import util.Tree.BinaryTree;
+import util.Tree.TreeNode;
 
 public class SmallestSubtreeWithDeepNodes {
     TreeNode result ;

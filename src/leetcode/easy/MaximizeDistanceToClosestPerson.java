@@ -1,7 +1,5 @@
 package leetcode.easy;
 
-import java.util.Arrays;
-
 public class MaximizeDistanceToClosestPerson {
     public int maxDistToClosest(int [] seats){
 

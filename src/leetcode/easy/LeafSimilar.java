@@ -1,9 +1,9 @@
 package leetcode.easy;
 
-import util.Tree.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import util.Tree.TreeNode;
 
 public class LeafSimilar {
     public boolean leafSimilar(TreeNode root1, TreeNode root2) {

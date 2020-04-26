@@ -1,7 +1,5 @@
 package leetcode.medium;
 
-import leetcode.SingleNumber;
-
 import java.util.Arrays;
 
 public class SingleNumber2 {

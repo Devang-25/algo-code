@@ -1,6 +1,8 @@
 package leetcode;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created by sekharan on 3/10/17.

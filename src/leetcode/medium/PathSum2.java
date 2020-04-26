@@ -1,9 +1,9 @@
 package leetcode.medium;
 
-import util.Tree.TreeNode;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import util.Tree.TreeNode;
 
 public class PathSum2 {
     public List<List<Integer>> pathSum(TreeNode root, int sum) {
