@@ -41,9 +41,5 @@ public class SumRootToLeaf {
         
         
     }
-    
-    public static void main(String[] args) {
-        SumRootToLeaf sr = new SumRootToLeaf();
-    }
-    
+
 }

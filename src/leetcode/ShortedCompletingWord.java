@@ -4,10 +4,7 @@
  * and open the template in the editor.
  */
 package leetcode;
-
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 
 /**
  *
