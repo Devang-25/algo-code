@@ -4,15 +4,14 @@ package leetcode.medium;
  * Created by mns on 1/4/19.
  */
 
-class ListNode {
-      int val;
-      ListNode next;
-      ListNode(int x) {
-          val = x;
-      }
-}
-
 public class SplitLinkedListParts {
+    static class ListNode {
+        public int val;
+        ListNode next;
+        ListNode(int x) {
+            val = x;
+        }
+    }
     public ListNode[] splitListToParts(ListNode root, int k) {
         if( k <= 0 ){
             return new ListNode[0];

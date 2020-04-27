@@ -1,0 +1,8 @@
+{
+    "java.dependency.syncWithFolderExplorer": true,
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "libs/guava-23.0.jar"
+    ],
+    "java.format.settings.url": "eclipse-formatter.xml"
+}
