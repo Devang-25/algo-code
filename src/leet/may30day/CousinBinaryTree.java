@@ -26,7 +26,7 @@ public class CousinBinaryTree {
         r.parentY = root;
         r.depthY = currHeight + 1;
       } else {
-        isCousinsUtil(root.left, x, y, currHeight, r);
+        isCousinsUtil(root.left, x, y, currHeight+1, r);
       }
     }
 
@@ -38,7 +38,7 @@ public class CousinBinaryTree {
         r.parentY = root;
         r.depthY = currHeight + 1;
       } else {
-        isCousinsUtil(root.right, x, y, currHeight, r);
+        isCousinsUtil(root.right, x, y, currHeight+1, r);
       }
     }
 
