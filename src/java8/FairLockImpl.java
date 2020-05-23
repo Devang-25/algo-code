@@ -42,7 +42,6 @@ public class FairLockImpl {
                     }
                 }
 
-                
             System.out.println("<------- " + Thread.currentThread().getName());
             }
         }
@@ -64,7 +63,7 @@ public class FairLockImpl {
 
     public static void main(String[] args) throws InterruptedException {
         FairLockImpl f = new FairLockImpl();
-        Thread[] arr = new Thread[10];
+        Thread[] arr = new Thread[1];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = new Thread(new Runnable() {
 
@@ -82,5 +81,4 @@ public class FairLockImpl {
             arr[i].join();
         }
     }
-
 }
